@@ -37,10 +37,3 @@ O pipeline inclui:
 5. **Visualização com NetworkX e PyVis**
 
 ---
-
-## 🧰 Pré-requisitos
-
-Antes de começar, instale as dependências:
-
-```bash
-pip install pandas scikit-learn matplotlib networkx pyvis

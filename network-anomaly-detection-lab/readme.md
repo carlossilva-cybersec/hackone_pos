@@ -65,6 +65,6 @@ Ao final dos laboratórios, você deverá ser capaz de:
 📍 HackOne Pós-Graduação — *Inteligência Artificial Aplicada a Redes e Cibersegurança*  
 📘 [LinkedIn](https://www.linkedin.com/in/carlossilva-cybersec/) | [GitHub](https://github.com/carlossilva-cybersec)
 
-> _“Não basta capturar logs — é preciso ensinar a máquina a pensar como um analista SOC.”_
+> _“Não basta capturar logs — é preciso ensinar a máquina a pensar”_
 
 ---

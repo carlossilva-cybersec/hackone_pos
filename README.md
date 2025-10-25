@@ -1,7 +1,5 @@
 
-# 🧠 HackOne Pós-Graduação  
-### 💻 Inteligência Artificial Aplicada a Redes e Cibersegurança
-
+# 💻 HackOne Pós-Graduação - Inteligência Artificial Aplicada a Redes e Cibersegurança
 > Repositório oficial de estudos e laboratórios da disciplina ministrada por  
 > **[Carlos Silva](https://www.linkedin.com/in/carlossilva-cybersec/)**  
 > Instrutor HackOne | Especialista em SOC, CTI e Inteligência Artificial Aplicada à Segurança

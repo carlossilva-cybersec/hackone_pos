@@ -1,13 +1,12 @@
-
 ---
 
-#  Detecção de Anomalias em Redes
+# 🔎 Detecção de Anomalias em Redes
 
 ### 🧠 Caso de Uso: Exfiltração de Dados no Ambiente CSBANK
 
-📡 **Topologia de Laboratório**
+**Topologia**
 
-![Topologia CSBANK]([topologia_csbank.png](https://github.com/carlossilva-cybersec/hackone_pos/blob/main/network-anomaly-detection-lab/img/topologia_csbank.png?raw=true))
+![Topologia CSBANK](https://github.com/carlossilva-cybersec/hackone_pos/blob/main/network-anomaly-detection-lab/img/topologia_csbank.png?raw=true)
 
 O cenário simula o ambiente da **CSBANK**, uma fintech alvo de incidentes de segurança envolvendo **malware** e **exfiltração de dados via rede**.  
 Os logs coletados do firewall e das máquinas comprometidas serão usados como base para **treinar e testar modelos de IA** voltados à detecção dessas atividades.
@@ -58,9 +57,9 @@ Aprofundar a análise utilizando logs de tráfego ICMP, DNS e HTTPS para identif
 ## 🧰 **Resultados Esperados**
 
 Ao final dos laboratórios, você deverá ser capaz de:
-- Identificar e isolar **máquinas comprometidas**;
-- Mapear **fluxos de exfiltração** dentro da topologia simulada;
-- Implementar uma **pipelines de IA aplicada à detecção de ameaças em redes reais**.
+- Identificar e isolar **máquinas comprometidas**;  
+- Mapear **fluxos de exfiltração** dentro da topologia simulada;  
+- Implementar **pipelines de IA aplicadas à detecção de ameaças em redes reais**.
 
 ---
 
@@ -68,6 +67,6 @@ Ao final dos laboratórios, você deverá ser capaz de:
 📍 HackOne Pós-Graduação — *Inteligência Artificial Aplicada a Redes e Cibersegurança*  
 📘 [LinkedIn](https://www.linkedin.com/in/carlossilva-cybersec/) | [GitHub](https://github.com/carlossilva-cybersec)
 
-> _“Não basta capturar logs — é preciso ensinar a máquina a pensar_
+> _“Não basta capturar logs — é preciso ensinar a máquina a pensar como um analista SOC.”_
 
 ---

@@ -1,1 +1,1 @@
-Dados de mostrass
+Dados de mostras

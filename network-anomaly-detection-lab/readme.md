@@ -1,6 +1,4 @@
----
-
-# 🔎 Detecção de Anomalias em Redes
+# Detecção de Anomalias em Redes
 
 ### 🧠 Caso de Uso: Exfiltração de Dados no Ambiente CSBANK
 

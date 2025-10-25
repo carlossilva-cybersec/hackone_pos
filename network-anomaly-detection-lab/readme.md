@@ -4,7 +4,7 @@
 
 **Topologia**
 
-![Topologia CSBANK](https://github.com/carlossilva-cybersec/hackone_pos/blob/main/network-anomaly-detection-lab/img/topologia_csbank.png?raw=true)
+![Topologia CSBANK]([https://github.com/carlossilva-cybersec/hackone_pos/blob/main/network-anomaly-detection-lab/img/topologia_csbank.png?raw=true](https://i.ibb.co/ds4SKB1V/Screenshot-2025-10-24-at-23-45-06.png))
 
 O cenário simula o ambiente da **CSBANK**, uma fintech alvo de incidentes de segurança envolvendo **malware** e **exfiltração de dados via rede**.  
 Os logs coletados do firewall e das máquinas comprometidas serão usados como base para **treinar e testar modelos de IA** voltados à detecção dessas atividades.

@@ -23,16 +23,19 @@ Durante as aulas, você aprenderá a:
 ---
 
 ## 🧩 Estrutura do Repositório
-hackone_pos/  
-│  
-├── network-anomaly-detection-lab/ # Laboratório 1 - FortiGate + ML  
-│ ├── pipeline_ids_fortigate.ipynb # Notebook principal  
-│ ├── fortigate_syslog.log.gz # Dataset de amostra  
-│ └── img/  
-│ └── topologia_csbank.png # Topologia do caso de uso  
-│  
-├── requirements.txt # Dependências Python  
-└── README.md # Este arquivo
+```text
+hackone_pos/
+│
+├── network-anomaly-detection-lab/        # Laboratório 1 - FortiGate + ML
+│   ├── pipeline_ids_fortigate.ipynb      # Notebook principal
+│   ├── fortigate_syslog.log.gz           # Dataset de amostra
+│   └── img/
+│       └── topologia_csbank.png          # Topologia do caso de uso
+│
+├── requirements.txt                      # Dependências Python
+└── README.md                             # Este arquivo
+```
+
 
 ---
 

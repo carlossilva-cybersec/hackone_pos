@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CSBANK SOC Copilot 🤖</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="bg-gradient-to-b from-gray-950 to-gray-900 text-gray-100 flex flex-col items-center h-screen font-sans">
+
+  <header class="flex items-center justify-center gap-3 mt-6">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712100.png" class="w-10 h-10" alt="AI">
+    <h1 class="text-3xl font-bold tracking-tight text-blue-400">CSBANK AIOPS Copilot</h1>
+  </header>
+
+  <main id="chat-box" class="w-3/4 max-w-4xl h-4/5 mt-6 bg-gray-900/80 backdrop-blur-md p-4 rounded-2xl overflow-y-auto shadow-2xl border border-gray-700 scroll-smooth">
+  </main>
+
+  <footer class="w-3/4 max-w-4xl flex mt-4">
+    <input id="user-input" type="text" placeholder="Digite sua pergunta..." 
+           class="flex-1 p-3 rounded-l-xl bg-gray-800 border border-gray-700 outline-none text-gray-100 placeholder-gray-500 focus:ring-2 focus:ring-blue-500 transition">
+    <button id="send-btn" class="bg-blue-600 px-6 rounded-r-xl font-semibold hover:bg-blue-700 transition-all">Enviar</button>
+  </footer>
+
+  <script>
+    const chatBox = document.getElementById('chat-box');
+    const input = document.getElementById('user-input');
+    const sendBtn = document.getElementById('send-btn');
+
+    function appendMessage(role, text) {
+      const msg = document.createElement('div');
+      msg.className = role === 'user' ? 'msg-user' : 'msg-ai';
+      msg.innerHTML = role === 'user' 
+        ? `<div class="bubble user-bubble"><span>${text}</span></div>` 
+        : `<div class="bubble ai-bubble"><span>${text}</span></div>`;
+      chatBox.appendChild(msg);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    sendBtn.addEventListener('click', sendMessage);
+    input.addEventListener('keypress', (e) => { if (e.key === 'Enter') sendMessage(); });
+
+    async function sendMessage() {
+      const msg = input.value.trim();
+      if (!msg) return;
+      appendMessage('user', msg);
+      input.value = '';
+
+      const res = await fetch('/chat', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({message: msg})
+      });
+      const data = await res.json();
+      appendMessage('ai', data.response);
+    }
+  </script>
+
+</body>
+</html>

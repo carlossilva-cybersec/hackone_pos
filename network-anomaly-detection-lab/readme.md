@@ -4,20 +4,20 @@
 
 **Topologia**
 
-![Topologia CSBANK](https://raw.githubusercontent.com/carlossilva-cybersec/hackone_pos/refs/heads/main/network-anomaly-detection-lab/img/topologia.png)
+![Topologia CSBANK](https://github.com/carlossilva-cybersec/hackone_pos/blob/main/network-anomaly-detection-lab/img/topologia.png?raw=true)
 
 O cenário simula o ambiente da **CSBANK**, uma fintech alvo de incidentes de segurança envolvendo **malware** e **exfiltração de dados via rede**.  
 Os logs coletados do firewall e das máquinas comprometidas serão usados como base para **treinar e testar modelos de IA** voltados à detecção dessas atividades.
 
 ---
 
-## 🧪 **LAB I — Detecção de Malware com Machine Learning**
+## 🧪 **LAB I — WORM na rede**
 
 ### 🎯 **Objetivo**
 Desenvolver um modelo de aprendizado de máquina capaz de identificar comportamentos anômalos em logs de rede e detectar **máquinas potencialmente comprometidas**.
 
 ### 🧩 **Desafios**
-- [ ] Analisar o conjunto de dados fornecido no repositório (`Data/`)  
+- [ ] Analisar o conjunto de dados fornecido no repositório (`Data/worm/`)  
 - [ ] Identificar **quais máquinas foram afetadas** pelo malware  
 - [ ] Descobrir **quem realizou a exfiltração de dados**  
 - [ ] Desenvolver um **algoritmo de Machine Learning** que identifique automaticamente o IP envolvido na exfiltração  
@@ -26,7 +26,7 @@ Desenvolver um modelo de aprendizado de máquina capaz de identificar comportame
 
 ### 📂 **Dados para Análise**
 > Sample dataset disponível em:  
-> `Data/fortigate_syslog.log.gz`
+> `Data/Worm/`
 
 ---
 
@@ -34,6 +34,10 @@ Desenvolver um modelo de aprendizado de máquina capaz de identificar comportame
 
 ### 🎯 **Objetivo**
 Aprofundar a análise utilizando logs de tráfego ICMP, DNS e HTTPS para identificar **técnicas avançadas de exfiltração**.
+
+### 📂 **Dados para Análise**
+> Sample dataset disponível em:  
+> `Data/fortigate_syslog.log.gz`
 
 ### 🧩 **Desafios**
 - [ ] Tratar e transformar logs de múltiplas fontes (firewall, proxy, endpoint)  
